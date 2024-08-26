@@ -14,7 +14,7 @@ require (
 	github.com/stretchr/testify v1.8.1
 )
 
-replace github.com/ThreeDotsLabs/watermill-sql/v3 => github.com/integer-technologies-b-v/watermill-sql/v3 v3.0.0-20240826123220-792441b646d6
+replace github.com/ThreeDotsLabs/watermill-sql/v3 => github.com/integer-technologies-b-v/watermill-sql/v3 v3.0.0-20240826123400-13d664150c80
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -29,6 +29,7 @@ require (
 	github.com/jackc/pgtype v1.14.0 // indirect
 	github.com/lithammer/shortuuid/v3 v3.0.7 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/rogpeppe/go-internal v1.12.0 // indirect
 	golang.org/x/crypto v0.20.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
