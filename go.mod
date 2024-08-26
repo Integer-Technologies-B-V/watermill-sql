@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/ThreeDotsLabs/watermill v1.2.0
-	github.com/ThreeDotsLabs/watermill-sql/v3 v3.0.0-00010101000000-000000000000
+	github.com/ThreeDotsLabs/watermill-sql/v3 v3.0.2
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/jackc/pgconn v1.14.3
 	github.com/jackc/pgx/v4 v4.18.2
