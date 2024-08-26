@@ -1,4 +1,4 @@
-module github.com/integer-technologies-b-v/watermill-sql
+module github.com/integer-technologies-b-v/watermill-sql/v3
 
 go 1.21
 

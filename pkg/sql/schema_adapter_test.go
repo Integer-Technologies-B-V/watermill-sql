@@ -10,7 +10,7 @@ import (
 
 	"github.com/ThreeDotsLabs/watermill"
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/integer-technologies-b-v/watermill-sql/pkg/sql"
+	"github.com/integer-technologies-b-v/watermill-sql/v3/pkg/sql"
 )
 
 // TestDefaultMySQLSchema checks if the SQL schema defined in DefaultMySQLSchema is correctly executed

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/ThreeDotsLabs/watermill/message"
-	"github.com/integer-technologies-b-v/watermill-sql/pkg/sql"
+	"github.com/integer-technologies-b-v/watermill-sql/v3/pkg/sql"
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/integer-technologies-b-v/watermill-sql/pkg/sql"
+	"github.com/integer-technologies-b-v/watermill-sql/v3/pkg/sql"
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgconn"
