@@ -1,9 +1,10 @@
-module github.com/ThreeDotsLabs/watermill-sql/v3
+module github.com/Integer-Technologies-B-V/watermill-sql/v3
 
 go 1.20
 
 require (
 	github.com/ThreeDotsLabs/watermill v1.2.0
+	github.com/ThreeDotsLabs/watermill-sql/v3 v3.0.0-00010101000000-000000000000
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/jackc/pgconn v1.14.3
 	github.com/jackc/pgx/v4 v4.18.2
@@ -12,6 +13,8 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.1
 )
+
+replace github.com/ThreeDotsLabs/watermill-sql/v3 => github.com/Integer-Technologies-B-V/watermill-sql/v3 v3.0.0-20240826103222-c6358104f2c2
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -26,7 +29,6 @@ require (
 	github.com/jackc/pgtype v1.14.0 // indirect
 	github.com/lithammer/shortuuid/v3 v3.0.7 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/rogpeppe/go-internal v1.10.0 // indirect
 	golang.org/x/crypto v0.20.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
