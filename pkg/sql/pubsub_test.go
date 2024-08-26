@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/ThreeDotsLabs/watermill"
-	"github.com/ThreeDotsLabs/watermill-sql/v3/pkg/sql"
 	"github.com/ThreeDotsLabs/watermill/message"
 	"github.com/ThreeDotsLabs/watermill/message/subscriber"
 	"github.com/ThreeDotsLabs/watermill/pubsub/tests"
 	driver "github.com/go-sql-driver/mysql"
+	"github.com/integer-technologies-b-v/watermill-sql/pkg/sql"
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/stdlib"
 	_ "github.com/lib/pq"
@@ -303,7 +303,7 @@ func TestCtxValues(t *testing.T) {
 }
 
 // TestNotMissingMessages checks if messages are not missing when messages are published in concurrent transactions.
-// See more: https://github.com/ThreeDotsLabs/watermill/issues/311
+// See more: https://github.com/integer-technologies-b-v/watermill/issues/311
 func TestNotMissingMessages(t *testing.T) {
 	t.Parallel()
 

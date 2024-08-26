@@ -22,7 +22,7 @@ test_reconnect:
 	go test -tags=reconnect ./...
 
 wait:
-	go run github.com/ThreeDotsLabs/wait-for@latest localhost:3306 localhost:5432
+	go run github.com/integer-technologies-b-v/wait-for@latest localhost:3306 localhost:5432
 
 build:
 	go build ./...
@@ -32,7 +32,7 @@ fmt:
 	goimports -l -w .
 
 update_watermill:
-	go get -u github.com/ThreeDotsLabs/watermill
+	go get -u github.com/integer-technologies-b-v/watermill
 	go mod tidy
 
 	sed -i '\|go 1\.|d' go.mod

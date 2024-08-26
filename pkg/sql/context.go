@@ -19,7 +19,7 @@ func setTxToContext(ctx context.Context, tx Tx) context.Context {
 // When a nack is sent, the transaction will be rolled back.
 //
 // It is useful when you want to ensure that data is updated only when the message is processed.
-// Example usage: https://github.com/ThreeDotsLabs/watermill/tree/master/_examples/real-world-examples/exactly-once-delivery-counter
+// Example usage: https://github.com/integer-technologies-b-v/watermill/tree/master/_examples/real-world-examples/exactly-once-delivery-counter
 func TxFromContext(ctx context.Context) (*Tx, bool) {
 	tx, ok := ctx.Value(txContextKey).(*Tx)
 	return tx, ok

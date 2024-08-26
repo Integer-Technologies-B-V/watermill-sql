@@ -90,7 +90,7 @@ func (s DefaultMySQLSchema) SelectQuery(topic string, consumerGroup string, offs
 	nextOffsetQuery := offsetsAdapter.NextOffsetQuery(topic, consumerGroup)
 
 	// It's important to wrap offset with "`" for MariaDB.
-	// See https://github.com/ThreeDotsLabs/watermill/issues/377
+	// See https://github.com/integer-technologies-b-v/watermill/issues/377
 	selectQuery := "SELECT `offset`, `uuid`, `payload`, `metadata` FROM " + s.MessagesTable(topic) +
 		" WHERE `offset` > (" + nextOffsetQuery.Query + ") ORDER BY `offset` ASC" +
 		` LIMIT ` + fmt.Sprintf("%d", s.batchSize())
